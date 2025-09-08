@@ -18,7 +18,7 @@ async function secuencial() {
 
     for (const user of users) {
         const posts = await getUserPosts(user.id);
-        console.log(`${user.name} tiene ${posts.length}         publicaciones`);
+        console.log(`${user.name} tiene ${posts.length} publicaciones`);
     }
     console.timeEnd("Secuencial");
 }
